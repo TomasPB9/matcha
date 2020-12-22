@@ -141,3 +141,12 @@ figure.intro >img{
 .intro{
   position: center;
 }
+
+.promo{
+  display: flex;
+  border: 3px solid black;
+  align-items: center;
+  max-width: 70%;
+  height: 250px;
+  margin: 100px auto;
+}
