@@ -2,103 +2,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* todos los hijos de header tendran esas propiedades */
-header > * {
-  display: inline-block;
-}
-
-
-.header-container{
-  height:155px ;
-  width:100%;
-  margin-bottom: 273px;
-  background-color: #fffbf7;
-}
-
-.nav_logo{
-  display: inline-flex;
-  margin-top: 25px;
-  margin-left: 10px;
-  height: 50px;
-  width: 100%;
-}
-
-.navbar{
-  display: inline-block;
-  padding-top: 30px;
-  margin-right: 350px;
-  margin-left: 300px;
-}
-.nav_ul{
-  display: flex;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.nav_li {
-  display: inline;
-  padding-bottom: 15px;
-  margin-right: 6px;
-  list-style: none;
-}
-
-.actions{
-  display: inline;
-}
-
-.sign_in{
-  color:  #67b54b;;
-  display: inline;
-  margin-left: 6px;
-  cursor: pointer;
-}
-
-.free-bItem{
-  display: inline;
-  margin: 5px;
-  color: white;
-  background-color: #67b54b;
-  height: 60px;
-  border-radius: 5px;
-  padding: .5rem 1rem;
-  
-}
-
-.nav_ul .nav_li .nav-link{
-  color: #025157;
-  text-decoration: none;
-}
-
-
-/*  SESION 1 */
-/* con puro nombre del elemento */
-body {
+body{
   background-color: #fffbf7;
   font-family: "Open Sans", sans-serif;
 }
 
-main {
-  margin-top: 285px;
+.container-nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.item-img{
+  margin-left: 5px;
+
+}
+
+.item-ul{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.item-li{
+  text-decoration: none;
+  color: #025157;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+.container-nav2{
+  display: flex;
+  align-items: center;
+}
+
+main{
   text-align: center;
 }
 
-
-h1 {
-  color: #025157;
+h1{
+  color:#025157 ;
   font-family: "Alegreya", serif;
   font-size: 60px;
   margin-bottom: 24px;
-  font-weight: 500;
-  line-height: 1.2;
 }
 
-h4 {
+h4{
   color: #46484c;
   font-family: "Slabo 27px", serif;
   font-size: 20px;
@@ -107,18 +60,39 @@ h4 {
   line-height: 1.2;
 }
 
-p {
-  color: #8b8b8bcc;
+.container-nav2 >*{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.container-nav2 a{
+    text-decoration: none;
+    text-align: right;
+    font-weight: 600;
+    font-size: 14px;
+    color: #67b54b;
+}
+
+.container-nav2 button{
+  color: white;
+  background-color: #67b54b;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 35%;
+}
+
+main{
   margin-top: 15px;
+  text-align: center;
 }
 
-form {
-  height: 55px;
-}
-
-input,button {
-  height: 100%;
-  border-radius: 8px;
+.container-form{
+  height: 85px;
 }
 
 input {
@@ -126,23 +100,44 @@ input {
   padding: 6px 20px;
   width: 60%;
   max-width: 250px;
-  box-sizing: border-box;
 }
 
 button {
-  background-color: #025157;
-  color: #fff;
-  border: none;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  padding: 6px 20px;
-  margin-left: -10px;
-  
-  cursor: pointer;
+  height: 81%;
+  border-radius: 8px;
 }
 
-.item-capterra {
-    margin-top: 32px;
+input{
+  height: 65%;
+  border-radius: 8px;
 }
 
+button {
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: -25px;
+}
 
+button,input{
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+p{
+  color: #8b8b8bcc;
+  margin-top: 15px;
+}
+
+figure.intro >img{
+  width: 70%;
+  vertical-align: middle;
+}
+
+.intro{
+  position: center;
+}
